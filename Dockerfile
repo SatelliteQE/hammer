@@ -9,5 +9,4 @@ RUN yum install -y tfm-rubygem-hammer_cli_foreman_admin
 RUN echo ":ssl:" >> /etc/hammer/cli.modules.d/foreman.yml
 RUN echo "  :verify_ssl: false" >> /etc/hammer/cli.modules.d/foreman.yml
 
-ENTRYPOINT ["hammer"]
-CMD ["--help"]
+CMD ["/bin/sh"]
